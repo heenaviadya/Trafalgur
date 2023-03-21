@@ -1,0 +1,106 @@
+.second-section {
+  height: 80vh;
+  display: grid;
+  place-items: center;
+  overflow: visible;
+  background-color: $background-color;
+  position: relative;
+  .bg-img {
+    width: 6rem;
+    height: 7rem;
+    object-fit: cover;
+    position: absolute;
+    top: 580px;
+    left: 1420px;
+    z-index: 1;
+  }
+  .content-wrapper {
+    z-index: 2;
+    .container {
+      margin-top: 2.5rem;
+      display: grid;
+      grid-template-columns: 52% 42%;
+      gap: 6%;
+      align-items: center;
+      justify-content: space-between;
+
+      .second-content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
+        text-align: left;
+        h1 {
+          margin-bottom: 1.6rem;
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 56px;
+          letter-spacing: -3px;
+        }
+        .line {
+          width: 3.5rem;
+          border: 2px solid black;
+         margin-bottom: 1.6rem;
+        }
+
+        p {
+          margin: 1rem 0 2rem;
+          color: $paragraph-color;
+          font-weight: 300;
+          font-size: 18px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
+
+// Media queries for medium devices
+@media screen and (max-width: 1024px) {
+  .second-section {
+    height: 60vh;
+    .bg-img{
+      display: none;
+    }
+    .content-wrapper{
+      .container {
+        gap: 1rem;
+        .second-content {
+          h1 {
+            font-size: 1rem;
+            letter-spacing: 3px;
+            line-height: 1.2rem;
+          }
+          p{
+            font-size:12px;
+          }
+       
+        }
+      }
+    }
+  
+  }
+}
+
+// Media queries for small devices
+@media screen and (max-width: 600px) {
+  .second-section {
+    .bg-img{
+      display: none;
+    }
+    height: 100vh;
+    padding-top: 3rem;
+    .container {
+.second-content {
+      margin: 1rem 0 1.5rem;
+      h1 {
+        font-size: 1rem;
+      }
+        p {
+        font-size: 12px;
+        margin: 0.8rem 0 1.5rem;
+        line-height: 1.4;
+      }
+    }
+  }
+}
+}

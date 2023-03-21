@@ -1,0 +1,27 @@
+@import "./partials/config.scss";
+@import "./partials/mixin.scss";
+@import "./partials/general.scss";
+@import "./partials/nav.scss";
+@import "./partials/_hero.scss";
+@import "./partials/services.scss";
+@import "./partials/second.scss";
+@import "./partials/third.scss";
+@import "./partials/testimonials.scss";
+@import "./partials/articles.scss";
+@import "./partials/contact.scss";
+@import "./partials/footer.scss";
+
+// *{
+//   border: 1px solid red;
+// }
+
+body{
+background-color:$background-color;
+
+
+}
+.content-wrapper {
+  margin: 0rem auto;
+  max-width: 1400px;
+
+}

@@ -1,0 +1,195 @@
+#testimonials {
+  background-color: $background-color;
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+
+  .content-wrapper {
+    background-color: $background-color;
+    width: 70%;
+   
+    .btn {
+      display: flex;
+      flex-direction: row;
+      margin-top: 3rem;
+      margin-left:16vw;
+      gap: 30vw;
+      %btn{  background-color: transparent;
+        color: $primary-color;
+        font-size: 30px;}
+        #btn-prev{
+          @extend %btn;
+      } 
+      #btn-next{
+        @extend %btn;
+    } 
+  
+    
+    }
+
+    .carousel-wrapper {
+      width: 100%;
+      max-width: 70rem;
+      height: 26.5rem;
+      position: relative;
+      overflow: hidden;
+      .carousel-slide {
+        @include gradientBackground;
+        position: absolute;
+        padding: 1.5rem 2rem;
+        margin-bottom: 3rem;
+        border-radius: 1.5rem;
+        width: 100%;
+        max-width: 70rem;
+        height: 26.5rem;
+        text-align: center;
+        color: white;
+        transition: all 0.6s;
+
+        h2 {
+          margin-top: 4rem;
+        }
+        .customer {
+          margin: 5rem 5.5rem;
+          display: flex;
+          justify-content: space-around;
+          text-align: left;
+
+          .customer-info {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            .avatar {
+              width: 8rem;
+              aspect-ratio: 1/1;
+              border-radius: 50%;
+              overflow: hidden;
+              border: 0.4rem solid white;
+            }
+          }
+
+          .statements {
+            width: 26rem;
+            height: 7.5px;
+            font-weight: 400;
+            line-height: 1.8rem;
+          }
+        }
+      }
+    }
+}
+}
+// Media queries for medium devices
+@media screen and (max-width: 1024px) {
+  #testimonials {
+    margin-top: 10rem;
+
+    .content-wrapper {
+      max-height: 20rem;
+      height: 100%;
+
+      .btn{
+        margin-top: 0.5rem;
+      }
+      .carousel-wrapper {
+        height: 18.5rem;
+          
+       
+        .carousel-slide {
+          height: 18.5rem;
+          h2 {
+            margin-top: 0.5rem;
+          }
+          .customer {
+            .customer-info {
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+
+              .avatar {
+                width: 3rem;
+              }
+            }
+            .customer-details {
+              font-weight: 400;
+              font-size: 12px;
+            }
+
+            .statements {
+              width: 14rem;
+              height: 8.5px;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 1.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media queries for small devices
+@media screen and (max-width: 600px) {
+  #testimonials {
+    margin-top: 5rem;
+    .content-wrapper {
+      max-height: 20rem;
+      height: 100%;
+  
+  
+     .btn{
+      margin-top: 0.5rem;
+      #btn-prev{
+        font-size: 12px;
+      }
+      #btn-next{
+        font-size: 12px;
+      }
+     
+     }
+      .carousel-wrapper {
+       
+        height: 10rem;
+    
+        .carousel-slide {
+          
+          height: 10rem;
+        
+          h2 {
+            margin-top: 0.5rem;
+            font-size: 12px;
+          }
+      
+          .customer {
+            margin: 1rem 0rem;
+            gap: 0.5rem;
+
+            .customer-info {
+              display: flex;
+              align-items: center;
+              gap: 1rem;
+
+              .avatar {
+                width: 2rem;
+                border: 2px solid white;
+              }
+            }
+            .customer-details {
+              font-weight: 300;
+              font-size: 8px;
+            }
+
+            .statements {
+              width: 18rem;
+              height: 9.5px;
+              font-weight: 300;
+              font-size: 8px;
+              line-height: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

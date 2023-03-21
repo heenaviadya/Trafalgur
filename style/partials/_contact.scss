@@ -1,0 +1,207 @@
+#contact {
+  background-color: $background-color;
+
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  position: relative;
+  .bg-img {
+    width: 8rem;
+    height: 7rem;
+    object-fit: contain;
+    overflow: hidden;
+    position: absolute;
+    top: 790px;
+    left: 1300px;
+    z-index: 1;
+  }
+  .content-wrapper {
+    z-index: 2;
+    .container {
+      width: 41rem;
+      position: relative;
+
+      .headings {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+          font-weight: 700;
+          font-size: 2.25rem;
+          line-height: 2.8rem;
+
+          margin-bottom: 1.6rem;
+        }
+        .line {
+          width: 3.5rem;
+          border: 2px solid black;
+          margin-bottom: 1.6rem;
+        }
+        p {
+          font-weight: 300;
+          font-size: 1.125rem;
+          line-height: 1.438rem;
+          margin-bottom: 3.125rem;
+        }
+        text-align: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 41rem;
+
+        .column {
+          display: flex;
+          flex-direction: row;
+          gap: 2rem;
+          input {
+            width: 19.3rem;
+          }
+        }
+
+        label {
+          font-weight: 300;
+          font-size: 1rem;
+          line-height: 1.25rem;
+          display: inline-block;
+          margin-bottom: 5px;
+        }
+        input,
+        textarea {
+          border: 2px solid black;
+          margin-bottom: 1.5rem;
+          border: 1px solid #7d7987;
+          border-radius: 5px;
+          height: 2.8rem;
+          width: 40.625rem;
+        }
+        .btn-secondary {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+      img {
+        position: absolute;
+        left: 86.06%;
+        right: 5.71%;
+        top: 92.31%;
+        bottom: 5.93%;
+        width: 131.58px;
+        height: 115px;
+        z-index: -4;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1024px) {
+  #contact {
+    .bg-img{
+      display: none;
+    }
+    .content-wrapper {
+      max-width: 900px;
+      width: 100%;
+      .container{
+        .headings{
+          font-size: 20px;
+        }
+       
+        form {
+          
+          padding-left:5rem;
+          width: 10.6rem;
+  
+          .column {
+            gap: 2rem;
+            input {
+              width: 14rem;
+            }
+          }
+  
+          label {
+         
+            font-size: 0.8rem;
+            line-height: 1.25rem;
+          
+          }
+          input,
+          textarea {
+          
+            width: 30rem;
+          }
+          .btn-secondary {
+            display: block;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:600px) {
+  #contact {
+    .bg-img{
+      display: none;
+    }
+    .content-wrapper {
+      max-width: 300px;
+      width: 100%;
+      .container{
+        width: 300px;
+        .headings{
+          width: 18.6rem;
+          h1{
+            font-size: 18px;
+        }
+        p{
+          font-size: 12px;
+        }
+      }
+        form {
+          display: flex;
+          flex-direction: column;
+           padding-left: 0;
+          width: 300px;
+  
+          .column {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            input {
+              width: 8.5rem;
+            }
+          }
+  
+          label {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 1.25rem;
+            display: inline-block;
+            margin-bottom: 5px;
+          }
+          input,
+          textarea {
+            border: 2px solid black;
+            margin-bottom: 1.5rem;
+            border: 1px solid #7d7987;
+            border-radius: 5px;
+            height: 2rem;
+            width: 18.2rem;
+          }
+          .btn-secondary {
+      
+            margin: 0 auto;
+          }
+        
+        }
+        img{
+          display: none;
+        }
+      }
+    }
+  }
+
+  
+}
+
